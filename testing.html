@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSP Garments Trading</title>
+
+    <link rel="icon" type="image/png" href="Images/CSSP Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/493ae0299a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="pre-header">
+        <div class="ticker-track"> 
+            <span><i class="fa-solid fa-cart-flatbed"></i> Provincial orders: 7-12 business days.</span>
+            <span><i class="fa-solid fa-truck-arrow-right"></i> Metro Manila: 7-10 business days.</span>
+            <span><i class="fa-solid fa-comment-dots"></i> Support: 9am-6pm, Mon-Sat.</span>
+            <span aria-hidden="true"><i class="fa-solid fa-cart-flatbed"></i> Provincial orders: 7-12 business days.</span>
+            <span aria-hidden="true"><i class="fa-solid fa-truck-arrow-right"></i> Metro Manila: 7-10 business days.</span>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="Home.html" class="logo-wrap">
+                <div class="logo-icon"><i class="fa-solid fa-anchor"></i></div>
+                <div class="logo-text">
+                    CSSP Garments
+                    <span>Trading</span>
+                </div>
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="2products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="3aboutus.html" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn">
+                    <i class="fa-solid fa-ship"></i>
+                    <span class="badge" id="count">0</span>
+                </button>
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <span class="hero-sub">Maritime Excellence</span>
+                <h1 class="hero-title">Made for <span>the sea</span></h1>
+                <p class="hero-desc">Premium safety compliant apparel, from precision tailored coveralls to high performance footwear, ensuring comfort and protection for seafarers.</p>
+                <div class="hero-btns">
+                    <a href="#collection" class="btn-primary">View Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="collection">
+    <div class="section-header">
+        <span class="section-sub">Uniforms</span>
+        <h2 class="section-title">Coveralls</h2>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="card-image-wrap"> 
+                <img src="Images/front1.jpg" class="img-front" alt="Front View">
+                <img src="Images/back1.jpg" class="img-back" alt="Back View">
+                <div class="card-badges">
+                    <span class="badge-tag new">Bestseller</span>
+                </div>
+                <button class="quick-add" onclick="addToCart()">
+                    <i class="fa-solid fa-plus"></i> Quick Add
+                </button>
+            </div>
+            <div class="card-info">
+                <span class="card-category">Uniforms</span>
+                <h3 class="card-name">Marine Coverall Pro</h3>
+                <div class="card-price">₱1,200.00</div>
+                <div class="rating">★★★★★ <span>(6)</span></div>
+                
+                <select class="size-select" style="width: 100%; margin-top: 10px; padding: 5px; border-radius: 8px;">
+                    <option selected disabled>Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+        </div> 
+        <div class="product-card">
+            <div class="card-image-wrap"> 
+                <img src="Images/front1.jpg" class="img-front" alt="Front View">
+                <img src="Images/back1.jpg" class="img-back" alt="Back View">
+                <div class="card-badges">
+                    <span class="badge-tag new">New</span>
+                </div>
+                <button class="quick-add" onclick="addToCart()">
+                    <i class="fa-solid fa-plus"></i> Quick Add
+                </button>
+            </div>
+            <div class="card-info">
+                <span class="card-category">Kitchen</span>
+                <h3 class="card-name">Chef's Galley Uniform</h3>
+                <div class="card-price">₱950.00</div>
+                <div class="rating">★★★★★ <span>(6)</span></div>
+                
+                <select class="size-select" style="width: 100%; margin-top: 10px; padding: 5px; border-radius: 8px;">
+                    <option selected disabled>Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-image-wrap"> 
+                <img src="Images/front1.jpg" class="img-front" alt="Front View">
+                <img src="Images/back1.jpg" class="img-back" alt="Back View">
+                <div class="card-badges">
+                    <span class="badge-tag new">Bestseller</span>
+                </div>
+                <button class="quick-add" onclick="addToCart()">
+                    <i class="fa-solid fa-plus"></i> Quick Add
+                </button>
+            </div>
+            <div class="card-info">
+                <span class="card-category">Uniforms</span>
+                <h3 class="card-name">Marine Coverall Pro</h3>
+                <div class="card-price">₱1,200.00</div>
+                <div class="rating">★★★★★ <span>(6)</span></div>
+                
+                <select class="size-select" style="width: 100%; margin-top: 10px; padding: 5px; border-radius: 8px;">
+                    <option selected disabled>Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+        </div> 
+        <div class="product-card">
+            <div class="card-image-wrap"> 
+                <img src="Images/front1.jpg" class="img-front" alt="Front View">
+                <img src="Images/back1.jpg" class="img-back" alt="Back View">
+                <div class="card-badges">
+                    <span class="badge-tag new">New</span>
+                </div>
+                <button class="quick-add" onclick="addToCart()">
+                    <i class="fa-solid fa-plus"></i> Quick Add
+                </button>
+            </div>
+            <div class="card-info">
+                <span class="card-category">Kitchen</span>
+                <h3 class="card-name">Chef's Galley Uniform</h3>
+                <div class="card-price">₱950.00</div>
+                <div class="rating">★★★★★ <span>(6)</span></div>
+                
+                <select class="size-select" style="width: 100%; margin-top: 10px; padding: 5px; border-radius: 8px;">
+                    <option selected disabled>Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-image-wrap"> 
+                <img src="Images/front1.jpg" class="img-front" alt="Front View">
+                <img src="Images/back1.jpg" class="img-back" alt="Back View">
+                <div class="card-badges">
+                    <span class="badge-tag new">Bestseller</span>
+                </div>
+                <button class="quick-add" onclick="addToCart()">
+                    <i class="fa-solid fa-plus"></i> Quick Add
+                </button>
+            </div>
+            <div class="card-info">
+                <span class="card-category">Uniforms</span>
+                <h3 class="card-name">Marine Coverall Pro</h3>
+                <div class="card-price">₱1,200.00</div>
+                <div class="rating">★★★★★ <span>(6)</span></div>
+                
+                <select class="size-select" style="width: 100%; margin-top: 10px; padding: 5px; border-radius: 8px;">
+                    <option selected disabled>Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+        </div> 
+    </section>
+
+    <section class="products" id="collection">
+    <div class="section-header">
+        <span class="section-sub">Uniforms</span>
+        <h2 class="section-title">Kitchen Uniforms</h2>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="card-image-wrap"> 
+                <img src="Images/front1.jpg" class="img-front" alt="Front View">
+                <img src="Images/back1.jpg" class="img-back" alt="Back View">
+                <div class="card-badges">
+                    <span class="badge-tag new">Bestseller</span>
+                </div>
+                <button class="quick-add" onclick="addToCart()">
+                    <i class="fa-solid fa-plus"></i> Quick Add
+                </button>
+            </div>
+            <div class="card-info">
+                <span class="card-category">Uniforms</span>
+                <h3 class="card-name">Marine Coverall Pro</h3>
+                <div class="card-price">₱1,200.00</div>
+                <div class="rating">★★★★★ <span>(6)</span></div>
+                
+                <select class="size-select" style="width: 100%; margin-top: 10px; padding: 5px; border-radius: 8px;">
+                    <option selected disabled>Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+        </div> 
+        <div class="product-card">
+            <div class="card-image-wrap"> 
+                <img src="Images/front1.jpg" class="img-front" alt="Front View">
+                <img src="Images/back1.jpg" class="img-back" alt="Back View">
+                <div class="card-badges">
+                    <span class="badge-tag new">New</span>
+                </div>
+                <button class="quick-add" onclick="addToCart()">
+                    <i class="fa-solid fa-plus"></i> Quick Add
+                </button>
+            </div>
+            <div class="card-info">
+                <span class="card-category">Kitchen</span>
+                <h3 class="card-name">Chef's Galley Uniform</h3>
+                <div class="card-price">₱950.00</div>
+                <div class="rating">★★★★★ <span>(6)</span></div>
+                
+                <select class="size-select" style="width: 100%; margin-top: 10px; padding: 5px; border-radius: 8px;">
+                    <option selected disabled>Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-image-wrap"> 
+                <img src="Images/front1.jpg" class="img-front" alt="Front View">
+                <img src="Images/back1.jpg" class="img-back" alt="Back View">
+                <div class="card-badges">
+                    <span class="badge-tag new">Bestseller</span>
+                </div>
+                <button class="quick-add" onclick="addToCart()">
+                    <i class="fa-solid fa-plus"></i> Quick Add
+                </button>
+            </div>
+            <div class="card-info">
+                <span class="card-category">Uniforms</span>
+                <h3 class="card-name">Marine Coverall Pro</h3>
+                <div class="card-price">₱1,200.00</div>
+                <div class="rating">★★★★★ <span>(6)</span></div>
+                
+                <select class="size-select" style="width: 100%; margin-top: 10px; padding: 5px; border-radius: 8px;">
+                    <option selected disabled>Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+        </div> 
+    </section>
+
+    <section class="products" id="collection">
+    <div class="section-header">
+        <span class="section-sub">Uniforms</span>
+        <h2 class="section-title">Jackets</h2>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="card-image-wrap"> 
+                <img src="Images/front1.jpg" class="img-front" alt="Front View">
+                <img src="Images/back1.jpg" class="img-back" alt="Back View">
+                <div class="card-badges">
+                    <span class="badge-tag new">Bestseller</span>
+                </div>
+                <button class="quick-add" onclick="addToCart()">
+                    <i class="fa-solid fa-plus"></i> Quick Add
+                </button>
+            </div>
+            <div class="card-info">
+                <span class="card-category">Uniforms</span>
+                <h3 class="card-name">Marine Coverall Pro</h3>
+                <div class="card-price">₱1,200.00</div>
+                <div class="rating">★★★★★ <span>(6)</span></div>
+                
+                <select class="size-select" style="width: 100%; margin-top: 10px; padding: 5px; border-radius: 8px;">
+                    <option selected disabled>Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+        </div> 
+        <div class="product-card">
+            <div class="card-image-wrap"> 
+                <img src="Images/front1.jpg" class="img-front" alt="Front View">
+                <img src="Images/back1.jpg" class="img-back" alt="Back View">
+                <div class="card-badges">
+                    <span class="badge-tag new">New</span>
+                </div>
+                <button class="quick-add" onclick="addToCart()">
+                    <i class="fa-solid fa-plus"></i> Quick Add
+                </button>
+            </div>
+            <div class="card-info">
+                <span class="card-category">Kitchen</span>
+                <h3 class="card-name">Chef's Galley Uniform</h3>
+                <div class="card-price">₱950.00</div>
+                <div class="rating">★★★★★ <span>(6)</span></div>
+                
+                <select class="size-select" style="width: 100%; margin-top: 10px; padding: 5px; border-radius: 8px;">
+                    <option selected disabled>Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="collection">
+    <div class="section-header">
+        <span class="section-sub">Safety</span>
+        <h2 class="section-title">PPE Equipment</h2>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="card-image-wrap"> 
+                <img src="Images/front1.jpg" class="img-front" alt="Front View">
+                <img src="Images/back1.jpg" class="img-back" alt="Back View">
+                <div class="card-badges">
+                    <span class="badge-tag new">Bestseller</span>
+                </div>
+                <button class="quick-add" onclick="addToCart()">
+                    <i class="fa-solid fa-plus"></i> Quick Add
+                </button>
+            </div>
+            <div class="card-info">
+                <span class="card-category">Uniforms</span>
+                <h3 class="card-name">Marine Coverall Pro</h3>
+                <div class="card-price">₱1,200.00</div>
+                <div class="rating">★★★★★ <span>(6)</span></div>
+                
+                <select class="size-select" style="width: 100%; margin-top: 10px; padding: 5px; border-radius: 8px;">
+                    <option selected disabled>Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+        </div> 
+        <div class="product-card">
+            <div class="card-image-wrap"> 
+                <img src="Images/front1.jpg" class="img-front" alt="Front View">
+                <img src="Images/back1.jpg" class="img-back" alt="Back View">
+                <div class="card-badges">
+                    <span class="badge-tag new">New</span>
+                </div>
+                <button class="quick-add" onclick="addToCart()">
+                    <i class="fa-solid fa-plus"></i> Quick Add
+                </button>
+            </div>
+            <div class="card-info">
+                <span class="card-category">Kitchen</span>
+                <h3 class="card-name">Chef's Galley Uniform</h3>
+                <div class="card-price">₱950.00</div>
+                <div class="rating">★★★★★ <span>(6)</span></div>
+                
+                <select class="size-select" style="width: 100%; margin-top: 10px; padding: 5px; border-radius: 8px;">
+                    <option selected disabled>Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-image-wrap"> 
+                <img src="Images/front1.jpg" class="img-front" alt="Front View">
+                <img src="Images/back1.jpg" class="img-back" alt="Back View">
+                <div class="card-badges">
+                    <span class="badge-tag new">Bestseller</span>
+                </div>
+                <button class="quick-add" onclick="addToCart()">
+                    <i class="fa-solid fa-plus"></i> Quick Add
+                </button>
+            </div>
+            <div class="card-info">
+                <span class="card-category">Uniforms</span>
+                <h3 class="card-name">Marine Coverall Pro</h3>
+                <div class="card-price">₱1,200.00</div>
+                <div class="rating">★★★★★ <span>(6)</span></div>
+                
+                <select class="size-select" style="width: 100%; margin-top: 10px; padding: 5px; border-radius: 8px;">
+                    <option selected disabled>Size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                </select>
+            </div>
+        </div> 
+    </section>
+
+    
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="brand-col">
+                <div class="footer-logo">CSSP Garments</div>
+                <p>Providing seafarers with the quality they deserve.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-square-phone"></i> 8559-8176</li>
+                    <li><i class="fa-solid fa-mobile-screen"></i> 0922 653 7181</li>
+                    <li><i class="fa-solid fa-at"></i> csspgarments@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright CSSP Garments Trading © All Rights Reserved</p>
+            <p>Designed by Logmunch!</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for the Add to Cart button
+        function addToCart() {
+            let count = document.getElementById('count');
+            count.innerHTML = parseInt(count.innerHTML) + 1;
+            alert('Added to cart!');
+        }
+
+        // Theme Toggle Script
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+        }
+    </script>
+</body>
+</html>
