@@ -12,8 +12,24 @@
   <!-- Google Fonts: Bebas Neue (display) + DM Sans (body) -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
  
+  <script src="Script.js"></script>
+
 </head>
 <body>
+
+  <!-- ===== SALES POP-UP MODAL ===== -->
+  <!-- Shows on page load offering free shipping for new user-->
+  <div class="modal-overlay" id="salesModal">
+    <div class="modal-box">
+      <button class="modal-close" id="closeModal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-anchor"><i class="fa-solid fa-anchor"></i></div>
+      <p class="modal-tag">Welcome Aboard</p>
+      <h2 class="modal-title">FREE SHIPPING<br>For New Customers</h2>
+      <p class="modal-desc">Your first maritime uniform order ships on us — nationwide!</p>
+      <button class="btn-primary" id="claimOffer">Claim Offer <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+
 <!-- ===== PRE-HEADER ===== -->
     <div class="pre-header">
         <div class="ticker-track" id="tickerTrack">
